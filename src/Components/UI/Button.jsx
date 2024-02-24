@@ -2,8 +2,10 @@ import "./button.css";
 
 const Button = ({ index }) => {
   return (
-    <button className={`learn-button${index === 1 ? "-active" : ""}`}>
+    <button className={`btn${index === 1 ? "-active" : ""}`}>
+      <i className="animation"></i>
       learn more
+      <i class="animation"></i>
     </button>
   );
 };
