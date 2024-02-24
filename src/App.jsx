@@ -1,9 +1,10 @@
+import React from "react";
 import "./App.css";
 import data from "./data.json";
 import Toogle from "./Components/Toogle/Toogle";
 import Card from "./Components/Card/Card";
-
-import Wave from "/public/lines-wave.svg";
+import WaveImg from "/lines-wave.svg";
+import CurvedImg from "/lines-curved.svg";
 
 function App() {
   console.log(data);
@@ -17,6 +18,8 @@ function App() {
           <Card key={index} item={item} index={index} />
         ))}
       </ul>
+      <img className="curved" src={CurvedImg} alt="wave image"></img>
+      <img className="wave" src={WaveImg} alt="wave image"></img>
     </div>
   );
 }
