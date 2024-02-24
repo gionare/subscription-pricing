@@ -4,11 +4,13 @@ const Toogle = () => {
   return (
     <div className="toggle-component">
       <h1 className="headline">Our Pricing</h1>
+
       <div className="pricing-toggle">
         <p className="options">Annually</p>
-        <div className="toggle-btn">
-          <div className="circle"></div>
-        </div>
+
+        <input id="checkboxInput" type="checkbox" />
+        <label class="toggleSwitch" for="checkboxInput"></label>
+
         <p className="options">Monthly</p>
       </div>
     </div>

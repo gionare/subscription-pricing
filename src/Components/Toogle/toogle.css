@@ -13,24 +13,50 @@
   column-gap: 24px;
 }
 
-.toggle-btn {
-  background: linear-gradient(135deg, #a2a7f0 0%, #696edd 100%);
-  border-radius: 16px;
-  width: 56px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding-left: 5px;
-  padding-right: 5px;
-  cursor: pointer;
+/* To hide the checkbox */
+#checkboxInput {
+  display: none;
 }
 
-.circle {
-  width: 24px;
-  height: 24px;
-  background-color: white;
-  border-radius: 50%;
+.toggleSwitch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 90px;
+  height: 30px;
+  background-color: rgb(206, 206, 206);
+  border-radius: 40px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.toggleSwitch::after {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 50%;
+  left: 0px;
+  background: conic-gradient(
+    rgba(26, 26, 26, 0.555),
+    white,
+    rgba(26, 26, 26, 0.555),
+    white,
+    rgba(26, 26, 26, 0.555)
+  );
+  border-radius: 40px;
+  transition-duration: 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.281);
+}
+
+#checkboxInput:checked + .toggleSwitch::after {
+  transform: translateX(100%);
+  transition-duration: 0.3s;
+}
+/* Switch background change */
+#checkboxInput:checked + .toggleSwitch {
+  background-color: #898ee4;
+  transition-duration: 0.3s;
 }
 
 .options {
