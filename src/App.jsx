@@ -5,6 +5,7 @@ import Toogle from "./Components/Toogle/Toogle";
 import Card from "./Components/Card/Card";
 import WaveImg from "/lines-wave.svg";
 import CurvedImg from "/lines-curved.svg";
+import ScrnSht from "/public/scrnsht.png";
 
 function App() {
   console.log(data);
