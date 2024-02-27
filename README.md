@@ -7,8 +7,6 @@ This project is a simple pricing app built with Vite and React, allowing users t
 - [Introduction](#introduction)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
@@ -41,7 +39,7 @@ npm install
 4. `npm start`
 5. Open your browser and navigate to http://localhost:3000 to view the project.
 
-## toogle switch HTML & CSS
+## Toogle switch HTML & CSS
 
 ```html
 <input id="checkboxInput" type="checkbox" />
